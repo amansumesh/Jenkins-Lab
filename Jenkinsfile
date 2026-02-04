@@ -25,6 +25,12 @@ pipeline {
                 echo "Deploying application..."
             }
         }
+
+        stage('Security Check') {
+            steps {
+                echo "Performing security scan..."
+            }
+        }
     }
 }
 
